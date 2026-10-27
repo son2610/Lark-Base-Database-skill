@@ -1,0 +1,74 @@
+/* Preset "ivory-blue" — Ngà + xanh dương đậm. Đào tạo, LMS, cổng thông tin nội bộ — đáng tin, thoáng. (Đã kiểm thử trong app LMS.)
+ * Nạp TRƯỚC base.css. Đổi preset = đổi một dòng import. Sáng/tối: <html data-theme="light|dark">. */
+:root {
+  --bg: #f8f6f1;
+  --surface: #ffffff;
+  --surface-2: #f3f1ea;
+  --surface-3: #ebe8df;
+  --border: #e5e1d6;
+  --border-strong: #d4cfc1;
+  --text: #1c2230;
+  --text-2: #4a5263;
+  --text-3: #6b7383;
+  --accent: #1d3f8f;
+  --accent-hover: #17337a;
+  --accent-soft: #e8eefb;
+  --accent-text: #ffffff;
+  --success: #1c7a4b;
+  --success-soft: #e3f3ea;
+  --info: #2457c5;
+  --info-soft: #e7eefc;
+  --warning: #9a5a00;
+  --warning-soft: #fbf0db;
+  --danger: #b4322a;
+  --danger-soft: #fbe7e5;
+  --neutral: #5f6776;
+  --neutral-soft: #eeece6;
+  --purple: #6941b8;
+  --purple-soft: #efe9fb;
+  --teal: #0f6f68;
+  --teal-soft: #e0f3f1;
+  --locked: #9aa0a9;
+  --focus: #3d6be0;
+  --shadow-pop: 0 10px 30px rgba(20, 24, 36, 0.14), 0 2px 6px rgba(20, 24, 36, 0.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --control-h: 38px;
+  --font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  --mono: ui-monospace, 'Cascadia Code', Consolas, 'Liberation Mono', monospace;
+  --font-display: var(--font);
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  --bg: #111318;
+  --surface: #181b22;
+  --surface-2: #1f232c;
+  --surface-3: #272c37;
+  --border: #2b313c;
+  --border-strong: #3a4250;
+  --text: #e8eaef;
+  --text-2: #b8bfcc;
+  --text-3: #8f98a8;
+  --accent: #7ea6ff;
+  --accent-hover: #9bbaff;
+  --accent-soft: #1f2b47;
+  --accent-text: #0d1426;
+  --success: #5fc88f;
+  --success-soft: #16301f;
+  --info: #7ea6ff;
+  --info-soft: #1d2a45;
+  --warning: #e6b45c;
+  --warning-soft: #33280f;
+  --danger: #f08a80;
+  --danger-soft: #3a1c1a;
+  --neutral: #9aa3b2;
+  --neutral-soft: #262b34;
+  --purple: #b9a0f5;
+  --purple-soft: #2a2140;
+  --teal: #5cd0c3;
+  --teal-soft: #13302d;
+  --locked: #6b7383;
+  --focus: #9bbaff;
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}

@@ -1,0 +1,12 @@
+schema_version: "1.1"
+name: review-weak-crm-prompt
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  review.md explains, in Vietnamese, what the prompt is missing (roles and permissions with sensitive fields,
+  an explicit table list with relations and snapshot rules, business rules with metric formulas and
+  anti-duplication, bounded AI behaviour, sample data counts and acceptance scenarios) and the platform risks that
+  matter for a CRM on Lark Base Database (for example: permissions enforced only server side, Mutation does not check
+  ownership, SQL cannot do column arithmetic so totals are stored or use formula fields, external customers cannot
+  open the app so quote sharing needs another route). app-spec.md is the rewritten 10-block spec and passes
+  scripts/lint_spec.mjs with no errors. Nothing is created or changed on Lark.

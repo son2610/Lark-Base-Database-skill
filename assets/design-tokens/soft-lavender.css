@@ -1,0 +1,75 @@
+/* Preset "soft-lavender" — Nền gradient tím–xanh nhẹ, thẻ trắng bo lớn, nút tím. Hiệu suất cá nhân, sự kiện, cộng đồng — thân thiện, khích lệ.
+ * Nạp TRƯỚC base.css. Đổi preset = đổi một dòng import. Sáng/tối: <html data-theme="light|dark">. */
+:root {
+  --bg: linear-gradient(160deg, #f3efff 0%, #eaf3ff 100%) fixed;
+  --surface: #ffffff;
+  --surface-2: #f4f1fd;
+  --surface-3: #ebe6fa;
+  --border: #e6e1f5;
+  --border-strong: #d3cbea;
+  --text: #221d33;
+  --text-2: #4c4565;
+  --text-3: #726b8c;
+  --accent: #6b4fd8;
+  --accent-hover: #5a40c0;
+  --accent-soft: #efeafd;
+  --accent-text: #ffffff;
+  --success: #1d7045;
+  --success-soft: #e2f4e9;
+  --info: #2f66d0;
+  --info-soft: #e6eefc;
+  --warning: #9a5b00;
+  --warning-soft: #fbefd9;
+  --danger: #b8352f;
+  --danger-soft: #fbe6e4;
+  --neutral: #625d77;
+  --neutral-soft: #efedf5;
+  --purple: #6b4fd8;
+  --purple-soft: #efeafd;
+  --teal: #0f7672;
+  --teal-soft: #dff3f1;
+  --locked: #a39db6;
+  --focus: #6b4fd8;
+  --shadow-pop: 0 12px 32px rgba(60, 40, 120, 0.12), 0 2px 6px rgba(60, 40, 120, 0.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --control-h: 38px;
+  --font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  --mono: ui-monospace, 'Cascadia Code', Consolas, 'Liberation Mono', monospace;
+  --font-display: var(--font);
+  --radius: 16px;
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  --bg: linear-gradient(160deg, #16121f 0%, #101622 100%) fixed;
+  --surface: #1b1726;
+  --surface-2: #231e31;
+  --surface-3: #2c263c;
+  --border: #302a42;
+  --border-strong: #433b5a;
+  --text: #ece9f5;
+  --text-2: #c2bdd3;
+  --text-3: #9690ab;
+  --accent: #b4a2ff;
+  --accent-hover: #c6b8ff;
+  --accent-soft: #2b2448;
+  --accent-text: #150f2b;
+  --success: #63c48d;
+  --success-soft: #15301f;
+  --info: #86aaf5;
+  --info-soft: #1d2a45;
+  --warning: #e6b55e;
+  --warning-soft: #33280f;
+  --danger: #f08d82;
+  --danger-soft: #3a1c1a;
+  --neutral: #a39fb4;
+  --neutral-soft: #29253a;
+  --purple: #b4a2ff;
+  --purple-soft: #2b2448;
+  --teal: #5cd0c3;
+  --teal-soft: #13302d;
+  --locked: #6d6782;
+  --focus: #c6b8ff;
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}

@@ -1,0 +1,79 @@
+{
+  "$comment": "Mốc nền tảng mà nội dung skill đã đối chiếu. Cập nhật theo references/09-maintaining.md mỗi khi Lark phát hành bản mới.",
+  "skillVersion": "1.0.0",
+  "verifiedOn": "2026-10-27",
+  "packages": {
+    "@lark-base-open/base-database-cli": {
+      "version": "1.7.0",
+      "released": "2026-10-26",
+      "notes": "Có --as user|bot, init --grant-admin, base-table-design, collaborator-handoff, contracts generate --no-install."
+    },
+    "@lark-base-open/base-database-app-sdk": {
+      "version": "0.4.2",
+      "released": "2026-10-26",
+      "notes": "0.4.0 bật mặc định readYourWrites + DataNotReadyError; ctx.records hỗ trợ brand feishu và lark (online)."
+    },
+    "@larksuite/cli": {
+      "version": "1.0.98",
+      "notes": "Có cờ toàn cục --profile, --as user|bot; skills list/read."
+    }
+  },
+  "fieldTested": {
+    "$comment": "Những gì đã kiểm chứng trên dự án thật (tenant Lark quốc tế, brand lark).",
+    "projects": [
+      {
+        "name": "CRM bán hàng",
+        "cli": "1.5.0",
+        "date": "2026-10-22",
+        "tables": 14,
+        "databaseFunctions": 41,
+        "faas": 15,
+        "ai": 1
+      },
+      {
+        "name": "LMS",
+        "cli": "1.6.0",
+        "date": "2026-10-26",
+        "tables": 21,
+        "databaseFunctions": 90,
+        "faas": 35,
+        "ai": 5
+      }
+    ],
+    "sqlEngine": "FxDB 6.0 (Base tạo bởi init từ 2026-10-22)"
+  },
+  "sources": [
+    "Skill chính thức lark-base-database 1.6.0 và 1.7.0 (đọc toàn bộ references)",
+    "SDK base-database-app-sdk 0.4.2 docs/",
+    "Hướng dẫn chính thức: https://bytedance.larkoffice.com/docx/LpJBd1ifloQPFMxOrpvc6eDCnHr",
+    "Phân tích 11 prompt mẫu của Lark (Genspark, khung 10 khối)",
+    "Hai app đã dựng và nghiệm thu thật (CRM bán hàng, LMS) cùng nhật ký bài học khi dựng"
+  ],
+  "officialReferences": [
+    "agent-tool-design.md",
+    "agent-tools.md",
+    "ai-function.md",
+    "base-capability-routing.md",
+    "base-sql-errors.generated.md",
+    "base-table-design.md",
+    "collaborator-handoff.md",
+    "database-function-limitations.md",
+    "database-function.md",
+    "development.md",
+    "environment-variables.md",
+    "faas.md",
+    "file-transfer.md",
+    "frontend-design-guide.md",
+    "legacy-ai-function.md",
+    "legacy-development.md",
+    "legacy-file-transfer.md",
+    "mutations.md",
+    "notifications.md",
+    "permission-design.md",
+    "release.md",
+    "style-guide.md",
+    "verification.md",
+    "workspace-migration.md",
+    "workspace.md"
+  ]
+}

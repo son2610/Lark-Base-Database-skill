@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: spec-spa-booking-ai
+expected_outcome: |
+  A complete 10-block Vietnamese spec in app-spec.md for a multi-branch spa booking app. It passes
+  scripts/lint_spec.mjs with no errors. It says plainly that customers outside the organisation cannot open a
+  Base Database app and offers an alternative (for example a public Base form or receptionist entry). Prepaid
+  packages deduct exactly one session per completed visit, never go below zero and keep the sold price as a
+  snapshot. Booking blocks double-booking of a technician or a room. AI treatment suggestions are drafts that staff
+  confirm before anything is written. Branch-scoped roles are defined. Nothing is created or changed on Lark.

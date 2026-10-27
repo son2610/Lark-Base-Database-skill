@@ -1,0 +1,74 @@
+/* Preset "warm-gray" — Xám ấm + xanh rêu trầm, thẻ trắng viền mảnh, bảng gọn. CRM, ERP, công cụ văn phòng — tiền nổi bật, trạng thái tiết chế.
+ * Nạp TRƯỚC base.css. Đổi preset = đổi một dòng import. Sáng/tối: <html data-theme="light|dark">. */
+:root {
+  --bg: #f5f3ef;
+  --surface: #ffffff;
+  --surface-2: #f0ede7;
+  --surface-3: #e7e3db;
+  --border: #e4dfd6;
+  --border-strong: #d2ccc0;
+  --text: #22201c;
+  --text-2: #4d4943;
+  --text-3: #75706a;
+  --accent: #2f5d50;
+  --accent-hover: #264c42;
+  --accent-soft: #e4efeb;
+  --accent-text: #ffffff;
+  --success: #286e45;
+  --success-soft: #e3f2e8;
+  --info: #2f62b8;
+  --info-soft: #e6eefb;
+  --warning: #9a5b00;
+  --warning-soft: #fbefd9;
+  --danger: #b3362d;
+  --danger-soft: #fbe6e4;
+  --neutral: #625e57;
+  --neutral-soft: #edeae4;
+  --purple: #6a45b0;
+  --purple-soft: #efe9f9;
+  --teal: #12706a;
+  --teal-soft: #dff2ef;
+  --locked: #a19c94;
+  --focus: #3b6fd8;
+  --shadow-pop: 0 10px 30px rgba(28, 24, 18, 0.12), 0 2px 6px rgba(28, 24, 18, 0.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --control-h: 38px;
+  --font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  --mono: ui-monospace, 'Cascadia Code', Consolas, 'Liberation Mono', monospace;
+  --font-display: var(--font);
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  --bg: #141311;
+  --surface: #1c1b18;
+  --surface-2: #24221f;
+  --surface-3: #2d2b27;
+  --border: #312e2a;
+  --border-strong: #403c36;
+  --text: #ece9e4;
+  --text-2: #c3beb6;
+  --text-3: #9a948b;
+  --accent: #7cc4ae;
+  --accent-hover: #95d3bf;
+  --accent-soft: #1d332c;
+  --accent-text: #0e1a16;
+  --success: #63c48d;
+  --success-soft: #15301f;
+  --info: #86aaf5;
+  --info-soft: #1d2a45;
+  --warning: #e6b55e;
+  --warning-soft: #33280f;
+  --danger: #f08d82;
+  --danger-soft: #3a1c1a;
+  --neutral: #a29c92;
+  --neutral-soft: #2a2824;
+  --purple: #b9a0f5;
+  --purple-soft: #2a2140;
+  --teal: #5cd0c3;
+  --teal-soft: #13302d;
+  --locked: #6e6962;
+  --focus: #9bbaff;
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}

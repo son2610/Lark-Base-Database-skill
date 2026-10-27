@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: spec-leave-fastpath
+expected_outcome: |
+  A complete 10-block Vietnamese spec in app-spec.md for a leave-management app built on Lark Base Database,
+  written with sensible defaults and no questions blocking progress. It passes scripts/lint_spec.mjs with no errors,
+  states the release scope, roles with what each can see and do, explicit tables including a leave balance,
+  working-day calculation that excludes weekends and holidays, anti-duplication rules, Vietnamese UI and formats,
+  sample data counts and at least four numbered acceptance scenarios including a permission-isolation one.
+  Nothing is created or changed on Lark.

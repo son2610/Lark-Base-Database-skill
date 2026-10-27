@@ -1,0 +1,9 @@
+{
+  "$comment": "Tham số mẫu cho tools/df-smoke.mjs. Hàm không có ở đây chạy với tham số trung tính (TEXT='all', INT=20). srv* chỉ chạy khi có case (cần serverKey).",
+  "cases": {
+    "whoami": {},
+    "listOrders": { "status": "all", "keyword": "%" },
+    "getOrder": { "orderId": "rec_ID_MAU_THAY_BANG_ID_THAT" }
+  },
+  "skip": []
+}
